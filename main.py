@@ -62,3 +62,7 @@ def hello():
 @application.route("/prime/<int:num>")
 def detect_prime(num):
     return 'The sum of all primes less than %d is %d' % (num, sum_primes(num))
+
+
+if __name__ == '__main__':
+    application.run(host='127.0.0.1', port=80, debug=True)
